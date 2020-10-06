@@ -372,6 +372,24 @@ You can create a `content/settings.json` file to configure the theme.
   - The default dir of your project, used in the `Edit this page on GitHub link` on each page (defaults to `docs`. Can be an empty string eg. `""`).
 - `layout` (`String`) <badge>v0.4.0+</badge>
   - The layout of your documentation (defaults to `default`). Can be changed to `single` to have a one-page doc.
+- `components` (`Object`) <badge>v0.7.0+</badge>
+  - This option allows you to override the components used by the docs theme. All you have to do is to create your own components inside `components/global/`, then override the desired key with the name of your component. (Don't prefix your components with `App`). Here is the defaults:
+
+    ```json
+    "components": {
+      "copyButton": "AppCopyButton",
+      "dropdown": "AppDropdown",
+      "footer": "AppFooter",
+      "githubLink": "AppGithubLink",
+      "header": "AppHeader",
+      "langSwitcher": "AppLangSwitcher",
+      "nav": "AppNav",
+      "prevNext": "AppPrevNext",
+      "search": "AppSearch",
+      "toc": "AppToc",
+      "colorSwitcher": "AppColorSwitcher"
+    }
+    ```
 
 ### Example
 
@@ -384,7 +402,10 @@ You can create a `content/settings.json` file to configure the theme.
     "dark": "/logo-dark.svg"
   },
   "github": "nuxt/content",
-  "twitter": "@nuxt_js"
+  "twitter": "@nuxt_js",
+  "components": {
+    "footer": "MyFooter"
+  }
 }
 ```
 
