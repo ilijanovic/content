@@ -384,10 +384,7 @@ You can create a `content/settings.json` file to configure the theme.
     "dark": "/logo-dark.svg"
   },
   "github": "nuxt/content",
-  "twitter": "@nuxt_js",
-  "components": {
-    "footer": "MyFooter"
-  }
+  "twitter": "@nuxt_js"
 }
 ```
 
