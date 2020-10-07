@@ -24,7 +24,7 @@
           </NuxtLink>
         </div>
         <div v-if="settings.layout !== 'single'" class="hidden flex-1 lg:flex justify-center w-4/6">
-          <component :is="settings.components.search" v-if="settings.components.search" />
+          <AppSearch />
         </div>
         <div
           class="lg:w-1/5 flex items-center pl-8"

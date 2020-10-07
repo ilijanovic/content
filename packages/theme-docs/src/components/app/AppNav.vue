@@ -6,7 +6,7 @@
     <div class="lg:sticky lg:top-16 overflow-y-auto h-full lg:h-auto lg:max-h-(screen-16)">
       <ul class="p-4 lg:py-8 lg:pl-0 lg:pr-8">
         <li class="mb-4 lg:hidden">
-          <component :is="settings.components.search" v-if="settings.components.search" />
+          <AppSearch />
         </li>
         <li
           v-for="(docs, category, index) in categories"
@@ -61,8 +61,8 @@
               <IconGithub class="w-5 h-5" />
             </a>
 
-            <component :is="settings.components.langSwitcher" v-if="settings.components.langSwitcher" />
-            <component :is="settings.components.colorSwitcher" v-if="settings.components.colorSwitcher" />
+            <AppLangSwitcher />
+            <AppColorSwitcher />
           </div>
         </li>
       </ul>
