@@ -90,6 +90,9 @@ module.exports = {
           },
           'pre code': {
             fontFamily: 'DM Mono'
+          },
+          'a code': {
+            color: theme('colors.primary.500')
           }
         }
       },
@@ -139,6 +142,9 @@ module.exports = {
             color: theme('colors.gray.100'),
             backgroundColor: theme('colors.gray.800'),
             borderWidth: 0
+          },
+          'a code': {
+            color: theme('colors.primary.500')
           },
           thead: {
             color: theme('colors.gray.100'),
